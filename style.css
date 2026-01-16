@@ -25,8 +25,8 @@
   --title-font-size:   clamp(1.25rem, 1vw + 1rem, 1.5rem);
   --author-font-size:  0.875rem; 
 
-  /* --- Адаптивная ширина карточки --- */
-  --card-max-width: min(24rem, calc(100vw - 40px));
+  /* ---  ширина карточки --- */
+  --card-max-width: clamp(20.4375rem, 100%, 24rem);
 }
 
 .visually-hidden {
@@ -108,7 +108,7 @@ body {
   position: relative;
   padding: var(--card-inset);
   width: 100%;
-  max-width: 20.4375rem; /* 327px*/
+  max-width: clamp(20.4375rem, 5vw + 18rem, 24rem); 
   border: .0625rem solid var(--color-gray-950); /* 1px */
   border-radius: 1.25rem; /* 20px */
   background: var(--color-white);
