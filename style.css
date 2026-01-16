@@ -14,11 +14,19 @@
   --font-weight-medium: 500;
   --font-weight-extrabold: 800;
   /* --- Размеры шрифтов в REM --- */
-  --content-text-size: .875rem; /* 14px */
-  --date-font-size: .75rem;     /* 12px */
-  --tag-font-size: .75rem;      /* 12px */
-  --title-font-size: 1.25rem;    /* 20px */
-  --author-font-size: .875rem;  /* 14px */
+  /* --content-text-size: .875rem; 
+  --date-font-size: .75rem;     
+  --tag-font-size: .75rem;    
+  --title-font-size: 1.25rem;   
+  --author-font-size: .875rem;   */
+    --content-text-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem); 
+  --date-font-size:    clamp(0.75rem, 0.5vw + 0.6rem, 0.875rem);
+  --tag-font-size:     clamp(0.75rem, 0.5vw + 0.6rem, 0.875rem);
+  --title-font-size:   clamp(1.25rem, 1vw + 1rem, 1.5rem);
+  --author-font-size:  0.875rem; 
+
+  /* --- Адаптивная ширина карточки --- */
+  --card-max-width: min(24rem, calc(100vw - 40px));
 }
 
 .visually-hidden {
@@ -216,15 +224,15 @@ body {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   :root {
-    --content-text-size: 1rem;    /* 16px */
-    --date-font-size: .875rem;   /* 14px */
-    --tag-font-size: .875rem;    /* 14px */
-    --title-font-size: 1.5rem;    /* 24px */
+    --content-text-size: 1rem;
+    --date-font-size: .875rem;  
+    --tag-font-size: .875rem;   
+    --title-font-size: 1.5rem; 
   }
 
   .card {
-    max-width: 24rem;/*384px*/
+    max-width: 24rem;
   }
-}
+} */
