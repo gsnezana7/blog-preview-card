@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/gsnezana7/blog-preview-card)
+- Live Site URL: [Live Demo Site](https://gsnezana7.github.io/blog-preview-card/)
 
 ## My process
 
@@ -60,8 +60,6 @@ a:focus-visible {
 ``` 
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@gsnezana7](https://www.frontendmentor.io)
 
 
