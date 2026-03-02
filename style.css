@@ -90,9 +90,9 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding-top: var(--container-spacing);
-  padding-right: var(--container-spacing);
-  padding-left: var(--container-spacing);
+  padding-block-start: var(--container-spacing);
+  padding-block-end: var(--container-spacing);
+  padding-inline-start: var(--container-spacing);
   min-height: 100vh;
   font-family: var(--font-family-main), sans-serif;
   font-size: var(--content-text-size);
@@ -123,7 +123,7 @@ body {
 
 .card__image-container {
   overflow: hidden;
-  margin-bottom: var(--block-spacing);
+  margin-block-end: var(--block-spacing);
   border-radius: .625rem; /* 10px */
 }
 
@@ -133,7 +133,7 @@ body {
 
 .card__category {
   display: inline-block;
-  margin-bottom: var(--content-gap);
+  margin-block-end: var(--content-gap);
   padding: .25rem .75rem; /* 4px 12px */
   font-size: var(--tag-font-size);
   font-weight: var(--font-weight-extrabold);
@@ -144,7 +144,7 @@ body {
 
 .card__date {
   margin: 0;
-  margin-bottom: var(--content-gap);
+  margin-block-end: var(--content-gap);
   font-size: var(--date-font-size);
   font-weight: var(--font-weight-medium);
   color: var(--color-gray-950);
@@ -152,7 +152,7 @@ body {
 
 .card__title {
   margin: 0;
-  margin-bottom: var(--content-gap);
+  margin-block-end: var(--content-gap);
   font-size: var(--title-font-size);
   font-weight: var(--font-weight-extrabold);
   color: var(--color-gray-950);
@@ -175,7 +175,7 @@ body {
 
 .card__text {
   margin: 0;
-  margin-bottom: var(--block-spacing);
+  margin-block-end: var(--block-spacing);
   font-size: var(--content-text-size);
   color: var(--color-gray-500);
 }
@@ -188,7 +188,7 @@ body {
 
 .card__author-avatar {
   display: block;
-  margin-right: .75rem; /* 12px */
+  margin-inline-end: .75rem; /* 12px */
   width: 2rem; /* 32px */
   height: 2rem;
 }
@@ -200,14 +200,14 @@ body {
 }
 
 .attribution {
- margin-top: auto;
- padding-bottom: 1.875rem;
+ margin-block-start: auto;
+ padding-block-end: 1.875rem;
   font-size: .6875rem; /* 11px */
   text-align: center;
 }
 
 .attribution__text {
-  margin-right: 3px;
+  margin-inline-end: 3px;
 }
 
 .attribution a {
