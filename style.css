@@ -133,7 +133,6 @@ body {
 
 .card__category {
   display: inline-block;
-  display: inline-block;
   margin-bottom: var(--content-gap);
   padding: .25rem .75rem; /* 4px 12px */
   font-size: var(--tag-font-size);
